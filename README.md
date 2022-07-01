@@ -1,2 +1,1 @@
-I am still working on it.
-I need some desigin Inspiration
+# Who are my target audience?
