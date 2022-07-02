@@ -7,11 +7,11 @@
 	>
 <channel>
 	<title>
-	Comments for AlzyWelzy	</title>
-	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
+	Comments on: Privacy Policy	</title>
+	<atom:link href="/privacy-policy/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Your  Daily Dose of Web Development</description>
-	<lastBuildDate>Sat, 02 Jul 2022 06:59:18 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 02 Jul 2022 06:58:17 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
