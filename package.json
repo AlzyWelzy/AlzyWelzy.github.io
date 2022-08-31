@@ -1,0 +1,31 @@
+{
+  "name": "alzywelzy.github.io",
+  "version": "1.0.0",
+  "description": "Making Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlzyWelzy/AlzyWelzy.github.io.git"
+  },
+  "keywords": [
+    "AlzyWelzy",
+    "alzywelzy.me",
+    "Manvendra Rajpoot"
+  ],
+  "author": "AlzyWelzy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlzyWelzy/AlzyWelzy.github.io/issues"
+  },
+  "homepage": "https://github.com/AlzyWelzy/AlzyWelzy.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "daisyui": "^2.24.0"
+  }
+}
