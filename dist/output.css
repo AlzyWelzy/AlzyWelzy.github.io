@@ -1608,15 +1608,6 @@ html {
   position: absolute;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -1632,6 +1623,11 @@ html {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.-my-60 {
+  margin-top: -15rem;
+  margin-bottom: -15rem;
 }
 
 .mt-3 {
@@ -1680,6 +1676,10 @@ html {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .flex {
