@@ -51,38 +51,9 @@
             tabindex="0"
             class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li><a href="#Projects">Projects</a></li>
-            <li><a>Tech Stack</a></li>
-            <li tabindex="0">
-              <a class="justify-between">
-                Contact Me
-                <svg
-                  class="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                  />
-                </svg>
-              </a>
-              <ul class="p-2">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/ManvendraRajpoot"
-                    target="_blank"
-                    >LinkedIn</a
-                  >
-                </li>
-                <li>
-                  <a href="https://twitter.com/AlzyWelzy" target="_blank"
-                    >Twitter</a
-                  >
-                </li>
-              </ul>
-            </li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#techstack">Tech Stack</a></li>
+            <li><a href="#contacts">Contact</a></li>
           </ul>
         </div>
         <a class="btn btn-ghost btn-circle normal-case text-xl" href="#">
@@ -93,38 +64,9 @@
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
-          <li><a href="#Projects">Projects</a></li>
-          <li><a>Tech Stack</a></li>
-          <li tabindex="0">
-            <a>
-              Contact Me
-              <svg
-                class="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                />
-              </svg>
-            </a>
-            <ul class="p-2">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/ManvendraRajpoot"
-                  target="_blank"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <a href="https://twitter.com/AlzyWelzy" target="_blank"
-                  >Twitter</a
-                >
-              </li>
-            </ul>
-          </li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#techstack">Tech Stack</a></li>
+          <li><a href="#contacts">Contact</a></li>
         </ul>
       </div>
       <div class="navbar-end">
@@ -157,14 +99,14 @@
             opportunities to learn and grow.
           </p>
           <button class="btn btn-primary">
-            <a href="mailto:welzyalzy@gmail.com" target="_blank">Email Me</a>
+            <a href="#contacts">Contact</a>
           </button>
         </div>
       </div>
     </div>
 
     <!-- Projects -->
-    <div class="hero min-h-screen bg-base-200" id="Projects">
+    <div class="hero min-h-screen bg-base-200" id="projects">
       <section class="text-gray-400 body-font bg-base-200">
         <div class="container px-5 py-24 mx-auto">
           <div
@@ -329,10 +271,11 @@
     <!-- Tech Stack -->
     <div
       class="z-10 w-full h-max tech-stack flex flex-col md:flex-row justify-center items-center text-zinc-100 opacity-95 mt-0 sm:mt-52 md:mt-0 bg-base-200"
+      id="techstack"
     >
       <div class="w-6/12 flex justify-center items-center">
         <img
-          src="./img/techstack.png"
+          src="./img/techstack.svg"
           alt=""
           class="hidden md:flex w-92 select-none pointer-events-none"
           draggable="false"
@@ -444,6 +387,145 @@
             />
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div
+      class="z-10 w-full h-max flex relative text-amber-300 flex-col md:flex-row justify-center items-center text-3xl sm:text-5xl md:text-6xl font-bold transform transition-all duration-300 ease-in-out bg-base-200"
+      id="contacts"
+    >
+      <div class="w-full md:w-5/12 hidden md:flex justify-center items-center">
+        <img
+          src="./img/contact.svg"
+          alt=""
+          class="w-11/12 select-none pointer-events-none"
+          draggable="false"
+        />
+      </div>
+      <div class="w-full md:w-6/12 flex flex-col justify-center items-center">
+        <p class="flex justify-center mt-20 md:mt-10 text-amber-200">CONTACT</p>
+        <div class="flex flex-row justify-center py-12 items-center">
+          <div
+            class="mx-2 sm:mx-4 rounded-full bg-fuchsia-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-fuchsia-300/30 group transition-all ease-in-out duration-500"
+            title="GitHub"
+          >
+            <a
+              href="https://github.com/AlzyWelzy"
+              target="_blank"
+              rel="noopener noreferrer"
+              class=""
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="w-8 h-8 sm:w-10 sm:h-10 text-fuchsia-900 group-hover:scale-75 transition-all ease-in-out duration-300"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                ></path></svg
+            ></a>
+          </div>
+          <div
+            class="mx-2 sm:mx-4 rounded-full bg-cyan-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-cyan-300/30 group transition-all ease-in-out duration-500"
+            title="Twitter"
+          >
+            <a
+              href="https://twitter.com/AlzyWelzy"
+              target="_blank"
+              rel="noopener noreferrer"
+              class=""
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="w-8 h-8 sm:w-10 sm:h-10 text-cyan-900 group-hover:scale-75 transition-all ease-in-out duration-500"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                ></path></svg
+            ></a>
+          </div>
+          <div
+            class="mx-2 sm:mx-4 rounded-full bg-blue-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-blue-300/30 group transition-all ease-in-out duration-500"
+            title="LinkedIn"
+          >
+            <a
+              href="https://linkedin.com/in/ManvendraRajpoot"
+              target="_blank"
+              rel="noopener noreferrer"
+              class=""
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="w-8 h-8 sm:w-10 sm:h-10 text-blue-900 group-hover:scale-75 transition-all ease-in-out duration-300"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                ></path></svg
+            ></a>
+          </div>
+          <div
+            class="mx-2 sm:mx-4 rounded-full bg-rose-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-rose-300/30 group transition-all ease-in-out duration-500"
+            title="Send Mail"
+          >
+            <a
+              href="mailto:welzyalzy@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class=""
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="w-8 h-8 sm:w-10 sm:h-10 text-rose-900 group-hover:scale-75 transition-all ease-in-out duration-300"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <a href="/resume.pdf" download=""
+          ><div
+            class="mx-2 sm:mx-4 rounded-full bg-emerald-200 text-emerald-900 p-2.5 sm:py-4 px-8 ring-2 sm:ring-4 ring-emerald-300/30 group transition-all ease-in-out text-xl sm:text-2xl font-semibold flex justify-center items-center hover:bg-emerald-300"
+            title="Download CV"
+          >
+            Resume<svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 16 16"
+              class="w-8 h-8 sm:w-10 sm:h-10 text-emerald-900 ml-3"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+              ></path>
+              <path
+                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+              ></path>
+            </svg></div
+        ></a>
       </div>
     </div>
 
