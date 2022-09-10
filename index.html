@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mytheme" class="scroll-smooth hover:scroll-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manvendra Rajpoot - Portfolio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <script src="./script/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="#Projects">Projects</a></li>
+            <li><a>Tech Stack</a></li>
+            <li tabindex="0">
+              <a class="justify-between">
+                Contact Me
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="p-2">
+                <li><a>LinkedIn</a></li>
+                <li><a>Twitter</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl">Manvendra Rajpoot</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal p-0">
+          <li><a href="#Projects">Projects</a></li>
+          <li><a>Tech Stack</a></li>
+          <li tabindex="0">
+            <a>
+              Contact Me
+              <svg
+                class="fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </a>
+            <ul class="p-2">
+              <li><a>LinkedIn</a></li>
+              <li><a>Twitter</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn" href="./resume.pdf" target="_blank">Download Resume</a>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div
+      class="hero min-h-screen bg-base-200"
+      style="
+        background-image: linear-gradient(
+            rgba(56, 70, 77, 0.85),
+            rgba(56, 70, 77, 0.85)
+          ),
+          url(./img/background.svg);
+      "
+    >
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img
+          src="./img/personal-img.webp"
+          class="max-w-sm rounded-lg shadow-2xl"
+        />
+        <div>
+          <h1 class="text-5xl font-bold">Hi, I'm Manvendra Rajpoot</h1>
+          <p class="py-6">
+            I am a Full Stack Web Developer with a passion for creating
+            beautiful and user-friendly websites. I have a strong passion for
+            learning new technologies and I am always looking for new
+            opportunities to learn and grow.
+          </p>
+          <button class="btn btn-primary">Contact Me</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="hero min-h-screen bg-base-200" id="Projects">
+      <section class="text-gray-400 body-font bg-base-200">
+        <div class="container px-5 py-24 mx-auto">
+          <div
+            class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
+          >
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"
+            >
+              My Projects
+            </h1>
+            <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">
+              These are some of the projects I have worked on.
+            </p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/3 md:w-1/2 p-4 flex justify-center">
+              <div
+                class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+              >
+                <div class="card w-96 bg-base-100 shadow-xl image-full">
+                  <figure>
+                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-primary">
+                        <a href="/omnifood">See Project</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4 flex justify-center">
+              <div
+                class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+              >
+                <div class="card w-96 bg-base-100 shadow-xl image-full">
+                  <figure>
+                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4 flex justify-center">
+              <div
+                class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+              >
+                <div class="card w-96 bg-base-100 shadow-xl image-full">
+                  <figure>
+                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4 flex justify-center">
+              <div
+                class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+              >
+                <div class="card w-96 bg-base-100 shadow-xl image-full">
+                  <figure>
+                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4 flex justify-center">
+              <div
+                class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+              >
+                <div class="card w-96 bg-base-100 shadow-xl image-full">
+                  <figure>
+                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4 flex justify-center">
+              <div
+                class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+              >
+                <div class="card w-96 bg-base-100 shadow-xl image-full">
+                  <figure>
+                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+          >
+            Button
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Tech Stack -->
+    <div
+      class="z-10 w-full h-max tech-stack flex flex-col md:flex-row justify-center items-center text-zinc-100 opacity-95 mt-0 sm:mt-52 md:mt-0 bg-base-200"
+    >
+      <div class="w-6/12 flex justify-center items-center">
+        <img
+          src="./img/techstack.png"
+          alt=""
+          class="hidden md:flex w-92 select-none pointer-events-none"
+          draggable="false"
+        />
+      </div>
+      <div class="w-full px-2 text-center flex flex-col md:px-0 md:w-6/12">
+        <p class="flex justify-center text-3xl font-semibold">TECH STACK:</p>
+        <div class="flex flex-col justify-center items-center mt-4">
+          <p class="text-xl mt-4 md:mt-1">Languages:</p>
+          <div class="flex flex-row flex-wrap justify-center">
+            <img
+              src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            /><img
+              src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            /><img
+              src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            /><img
+              src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-2">
+          <p class="text-xl mt-4 md:mt-1">JS Framework/Library:</p>
+          <div class="flex flex-row flex-wrap justify-center">
+            <img
+              src="https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-2">
+          <p class="text-xl mt-4 md:mt-1">
+            CSS Framework/Library/Pre-processors:
+          </p>
+          <div class="flex flex-row flex-wrap justify-center">
+            <img
+              src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            /><img
+              src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-2">
+          <p class="text-xl mt-4 md:mt-1">Database:</p>
+          <div class="flex flex-row flex-wrap justify-center">
+            <img
+              src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-2">
+          <p class="text-xl mt-4 md:mt-1">Backend:</p>
+          <div class="flex flex-row flex-wrap justify-center">
+            <img
+              src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            /><img
+              src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-2">
+          <p class="text-xl mt-4 md:mt-1">CI/CD:</p>
+          <div class="flex flex-row flex-wrap justify-center">
+            <img
+              src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-2">
+          <p class="text-xl mt-4 md:mt-1">Version Control:</p>
+          <div class="flex flex-row flex-wrap justify-center">
+            <img
+              src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"
+              alt=""
+              class="m-2 md:m-3 h-8 select-none pointer-events-none"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
