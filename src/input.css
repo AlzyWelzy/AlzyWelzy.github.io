@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 26em) {
+  .smolMobile {
+    width: 20rem !important;
+  }
+}
