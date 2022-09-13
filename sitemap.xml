@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://alzywelzy.me/</loc>
+  <lastmod>2022-09-13T17:11:51+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://alzywelzy.me/resume.pdf</loc>
+  <lastmod>2022-09-13T17:11:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alzywelzy.me/omnifood/</loc>
+  <lastmod>2022-09-11T13:59:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alzywelzy.me/Natours/</loc>
+  <lastmod>2022-09-11T14:19:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alzywelzy.me/Nexter/</loc>
+  <lastmod>2022-09-11T14:14:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
