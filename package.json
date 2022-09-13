@@ -1,11 +1,10 @@
 {
   "name": "alzywelzy.github.io",
   "version": "1.0.0",
-  "description": "My Portfolio Website",
+  "description": "Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "watch": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
   },
   "repository": {
     "type": "git",
@@ -13,7 +12,8 @@
   },
   "keywords": [
     "AlzyWelzy",
-    "ManvendraRajpoot"
+    "Portfolio",
+    "Website"
   ],
   "author": "AlzyWelzy",
   "license": "ISC",
@@ -25,6 +25,6 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "daisyui": "^2.25.0"
+    "flowbite": "^1.5.3"
   }
 }

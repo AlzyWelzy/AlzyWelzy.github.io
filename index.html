@@ -1,523 +1,617 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="mytheme" class="scroll-smooth hover:scroll-auto">
+<html lang="en" class="dark scroll-smooth hover:scroll-auto md:scroll-auto">
   <head>
-    <meta
-      name="google-site-verification"
-      content="ukdG0B7kxvy5Re4dyV-py9yQGxhQE3ayvopVLg1By9A"
-    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="
-    My Portfolio Website - A place where I showcase my work and skills. I am a full stack web developer and I love to build websites and web applications.
-    "
-    />
-    <meta
-      name="keywords"
-      content="AlzyWelzy, alzywelzy, Portfolio,Full Stack Web Developer,websites, Web Developer"
-    />
-    <meta name="author" content="Manvendra Rajpoot" />
-    <meta name="robots" content="all" />
-    <meta name="googlebot" content="all">
-
     <title>Portfolio - Manvendra Rajpoot</title>
-    <link rel="canonical" href="https://alzywelzy.me/" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./favicon/apple-touch-icon.png"
+      href="./img/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon/favicon-32x32.png"
+      href="./img/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./favicon/favicon-16x16.png"
+      href="./img/favicon-16x16.png"
     />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
-    <link rel="stylesheet" href="./dist/output.css" />
-    <script src="./script/main.js" defer></script>
+    <link rel="manifest" href="./site.webmanifest" />
+    <script src="./public/flowbite.js" defer></script>
+    <script src="./public/index.js" defer></script>
+    <link rel="stylesheet" href="./public/styles.css" />
   </head>
   <body>
     <!-- Navbar -->
-
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <header>
+      <nav
+        class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+      >
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="./img/logo.svg"
+              class="mr-3 h-6 sm:h-9"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >AlzyWelzy</span
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </label>
-          <ul
-            tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#techstack">Tech Stack</a></li>
-            <li><a href="#contacts">Contact</a></li>
-          </ul>
-        </div>
-        <a class="btn btn-ghost btn-circle normal-case text-xl" href="#">
-          <div class="w-10">
-            <img src="./img/logo.webp" class="rounded-full" alt="logo" />
+          </a>
+          <div class="flex md:order-2">
+            <button
+              type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              <a
+                href="./resume.pdf"
+                target="_blank"
+                class="flex justify-center items-center"
+              >
+                <svg
+                  class="w-6 h-6 inline-block"
+                  data-darkreader-inline-stroke=""
+                  fill="none"
+                  stroke="currentColor"
+                  style="--darkreader-inline-stroke: currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  ></path></svg
+                >Resume</a
+              >
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
           </div>
-        </a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal p-0">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#techstack">Tech Stack</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <a class="btn" href="./resume.pdf" target="_blank">Download Resume</a>
-      </div>
-    </div>
+          <div
+            class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#techstack"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Tech Stack</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!-- Hero -->
+    <main class="bg-gray-900">
+      <section class="lg:-my-20 text-white bg-gray-900">
+        <div
+          class="px-4 pt-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex"
+        >
+          <div class="max-w-3xl mx-auto text-center">
+            <h1
+              class="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 pb-2"
+            >
+              Hi There, I'm
 
-    <div
-      class="hero min-h-screen bg-base-200"
-      style="
-        background-image: linear-gradient(
-            rgba(56, 70, 77, 0.85),
-            rgba(56, 70, 77, 0.85)
-          ),
-          url(./img/background.svg);
-      "
-    >
-      <div class="hero-content flex-col lg:flex-row-reverse">
-        <img
-          src="./img/personal-img.webp"
-          class="max-w-sm rounded-lg shadow-2xl smolMobile"
-          alt="Manvendra Rajpoot"
-        />
-        <div>
-          <h1 class="text-5xl font-bold">Hi, I'm Manvendra Rajpoot</h1>
-          <p class="py-6">
-            I am a Full Stack Web Developer with a passion for creating
-            beautiful and user-friendly websites. I have a strong passion for
-            learning new technologies and I am always looking for new
-            opportunities to learn and grow.
-          </p>
-          <button class="btn btn-primary">
-            <a href="#contacts">Contact</a>
+              <span class="sm:block"> Manvendra Rajpoot </span>
+            </h1>
+
+            <p class="max-w-xl mx-auto sm:leading-relaxed sm:text-xl">
+              I am a Full Stack Web Developer with a passion for creating
+              beautiful and user-friendly websites. I have a strong passion for
+              learning new technologies and I am always looking for new
+              opportunities to learn and grow.
+            </p>
+
+            <div class="flex flex-wrap justify-center mt-8 gap-4">
+              <a
+                class="block w-full px-12 py-3 text-sm font-medium text-white bg-blue-600 border border-blue-600 rounded sm:w-auto active:text-opacity-75 hover:bg-transparent hover:text-white focus:outline-none focus:ring"
+                href="/get-started"
+              >
+                Get Started
+              </a>
+
+              <a
+                class="block w-full px-12 py-3 text-sm font-medium text-white border border-blue-600 rounded sm:w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring"
+                href="/about"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+              <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1
+                class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0"
+              >
+                My Projects
+              </h1>
+              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+                Below are the projects I have worked on. I have only included
+                some projects here but you can find more on my GitHub. I would
+                love to hear your feedback on my projects. I am always looking
+                for new opportunities to learn and grow. I am currently looking
+                for a full-time position as a web developer. If you have any
+                questions or would like to work together, please feel free to
+                contact me.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  class="object-cover object-center h-full w-full"
+                  src="./img/projectImages/omnifood.webp"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-white mt-5">
+                Omnifood
+              </h2>
+              <p class="text-base leading-relaxed mt-2">
+                A healthy meal delivered to your door, every single day. Your
+                daily dose of health in 3 simple steps.
+              </p>
+              <a
+                href="/omnifood"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                >See Project
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  class="object-cover object-center h-full w-full"
+                  src="./img/projectImages/natours.webp"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-white mt-5">
+                Natours
+              </h2>
+              <p class="text-base leading-relaxed mt-2">
+                Outdoors is where life happens, let's go on an adventure
+                together
+              </p>
+              <a
+                href="/Natours"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                >See Project
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  class="object-cover object-center h-full w-full"
+                  src="./img/projectImages/nexter.webp"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-white mt-5">
+                Nexter
+              </h2>
+              <p class="text-base leading-relaxed mt-2">
+                Your own home: the ultimate freedom. Find your dream home with
+                our modern real estate website.
+              </p>
+              <a
+                href="/Nexter"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                >See Project
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <button
+            class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+          >
+            <a href="https://github.com/AlzyWelzy" target="_blank"
+              >See GitHub Profile</a
+            >
           </button>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Projects -->
-    <section class="text-base body-font bg-base-300">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col">
-          <div class="h-1 bg-gray-200 rounded overflow-hidden">
-            <div class="w-24 h-full bg-indigo-500"></div>
+      <!-- Tech Stack -->
+      <section
+        class="z-10 w-full h-max tech-stack flex flex-col md:flex-row justify-center items-center text-zinc-100 opacity-95 mt-0 sm:mt-52 md:mt-0 bg-gray-900"
+        id="techstack"
+      >
+        <div class="w-6/12 flex justify-center items-center">
+          <img
+            src="./img/techstack.svg"
+            alt="techstack"
+            class="hidden md:flex w-92 select-none pointer-events-none"
+            draggable="false"
+          />
+        </div>
+        <div class="w-full px-2 text-center flex flex-col md:px-0 md:w-6/12">
+          <p class="flex justify-center text-3xl font-semibold">TECH STACK:</p>
+          <div class="flex flex-col justify-center items-center mt-4">
+            <p class="text-xl mt-4 md:mt-1">Languages:</p>
+            <div class="flex flex-row flex-wrap justify-center">
+              <img
+                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                alt="JavaScript"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              /><img
+                src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"
+                alt="CSS"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              /><img
+                src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"
+                alt="HTML"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              /><img
+                src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"
+                alt="Markdown"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              />
+            </div>
           </div>
-          <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-            <h2 class="sm:w-2/5 font-medium title-font text-2xl mb-2 sm:mb-0">
-              My Projects
-            </h2>
-            <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-              Below are some of my projects. I have worked on a lot of projects
-              but I have only listed the ones that I am proud of. I have also
-              worked on a lot of projects that are not listed here. If you want
-              to see more of my work, you can check out my GitHub profile.
+          <div class="flex flex-col justify-center items-center mt-2">
+            <p class="text-xl mt-4 md:mt-1">JS Framework/Library:</p>
+            <div class="flex flex-row flex-wrap justify-center">
+              <img
+                src="https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00"
+                alt="Svelte"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center mt-2">
+            <p class="text-xl mt-4 md:mt-1">
+              CSS Framework/Library/Pre-processors:
             </p>
+            <div class="flex flex-row flex-wrap justify-center">
+              <img
+                src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                alt="Tailwind_CSS"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              /><img
+                src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
+                alt="Sass"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center mt-2">
+            <p class="text-xl mt-4 md:mt-1">Database:</p>
+            <div class="flex flex-row flex-wrap justify-center">
+              <img
+                src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
+                alt="MongoDB"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center mt-2">
+            <p class="text-xl mt-4 md:mt-1">Backend:</p>
+            <div class="flex flex-row flex-wrap justify-center">
+              <img
+                src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
+                alt="Node.js"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              /><img
+                src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"
+                alt="Express.js"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center mt-2">
+            <p class="text-xl mt-4 md:mt-1">CI/CD:</p>
+            <div class="flex flex-row flex-wrap justify-center">
+              <img
+                src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"
+                alt="GitHub_Actions"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center mt-2">
+            <p class="text-xl mt-4 md:mt-1">Version Control:</p>
+            <div class="flex flex-row flex-wrap justify-center">
+              <img
+                src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"
+                alt="GIT"
+                class="m-2 md:m-3 h-8 select-none pointer-events-none"
+                draggable="false"
+              />
+            </div>
           </div>
         </div>
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center h-full w-full"
-                src="./img/projectImages/omnifood.webp"
-                alt="omnifood"
-              />
-            </div>
-            <h3 class="text-4xl title-font font-bold mt-5">Omnifood</h3>
-            <p class="text-base leading-relaxed mt-2">
-              A healthy meal delivered to your door, every single day
-            </p>
-            <a
-              class="inline-flex items-center mt-3"
-              href="/omnifood"
-              target="_blank"
-            >
-              See Project
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center h-full w-full"
-                src="./img/projectImages/nexter.webp"
-                alt="nexter"
-              />
-            </div>
-            <h3 class="text-4xl title-font font-bold mt-5">Nexter</h3>
-            <p class="text-base leading-relaxed mt-2">
-              The ultimate personal freedom
-            </p>
-            <a
-              class="inline-flex items-center mt-3"
-              href="/Nexter"
-              target="_blank"
-            >
-              See Project
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center h-full w-full"
-                src="./img/projectImages/natours.webp"
-                alt="natours"
-              />
-            </div>
-            <h3 class="text-4xl title-font font-bold mt-5">Natours</h3>
-            <p class="text-base leading-relaxed mt-2">
-              Outdoors is where Life Happens
-            </p>
-            <a
-              class="inline-flex items-center mt-3"
-              href="/Natours"
-              target="_blank"
-            >
-              See Project
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Tech Stack -->
-    <div
-      class="z-10 w-full h-max tech-stack flex flex-col md:flex-row justify-center items-center text-zinc-100 opacity-95 mt-0 sm:mt-52 md:mt-0 bg-base-200"
-      id="techstack"
-    >
-      <div class="w-6/12 flex justify-center items-center">
-        <img
-          src="./img/techstack.svg"
-          alt="techstack"
-          class="hidden md:flex w-92 select-none pointer-events-none"
-          draggable="false"
-        />
-      </div>
-      <div class="w-full px-2 text-center flex flex-col md:px-0 md:w-6/12">
-        <p class="flex justify-center text-3xl font-semibold">TECH STACK:</p>
-        <div class="flex flex-col justify-center items-center mt-4">
-          <p class="text-xl mt-4 md:mt-1">Languages:</p>
-          <div class="flex flex-row flex-wrap justify-center">
-            <img
-              src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-              alt="JavaScript"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            /><img
-              src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"
-              alt="CSS"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            /><img
-              src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"
-              alt="HTML"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            /><img
-              src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"
-              alt="Markdown"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            />
-          </div>
+      <!-- Contact -->
+      <section
+        class="z-10 w-full h-max flex relative text-amber-300 flex-col md:flex-row justify-center items-center text-3xl sm:text-5xl md:text-6xl font-bold transform transition-all duration-300 ease-in-out bg-base-200"
+        id="contacts"
+      >
+        <div
+          class="w-full md:w-5/12 hidden md:flex justify-center items-center"
+        >
+          <img
+            src="./img/contact.svg"
+            alt="contact"
+            class="w-11/12 select-none pointer-events-none"
+            draggable="false"
+          />
         </div>
-        <div class="flex flex-col justify-center items-center mt-2">
-          <p class="text-xl mt-4 md:mt-1">JS Framework/Library:</p>
-          <div class="flex flex-row flex-wrap justify-center">
-            <img
-              src="https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00"
-              alt="Svelte"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-center mt-2">
-          <p class="text-xl mt-4 md:mt-1">
-            CSS Framework/Library/Pre-processors:
+        <div class="w-full md:w-6/12 flex flex-col justify-center items-center">
+          <p class="flex justify-center mt-20 md:mt-10 text-amber-200">
+            CONTACT
           </p>
-          <div class="flex flex-row flex-wrap justify-center">
-            <img
-              src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
-              alt="Tailwind_CSS"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            /><img
-              src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-              alt="Sass"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-center mt-2">
-          <p class="text-xl mt-4 md:mt-1">Database:</p>
-          <div class="flex flex-row flex-wrap justify-center">
-            <img
-              src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
-              alt="MongoDB"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-center mt-2">
-          <p class="text-xl mt-4 md:mt-1">Backend:</p>
-          <div class="flex flex-row flex-wrap justify-center">
-            <img
-              src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
-              alt="Node.js"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            /><img
-              src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"
-              alt="Express.js"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-center mt-2">
-          <p class="text-xl mt-4 md:mt-1">CI/CD:</p>
-          <div class="flex flex-row flex-wrap justify-center">
-            <img
-              src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"
-              alt="GitHub_Actions"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-center mt-2">
-          <p class="text-xl mt-4 md:mt-1">Version Control:</p>
-          <div class="flex flex-row flex-wrap justify-center">
-            <img
-              src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"
-              alt="GIT"
-              class="m-2 md:m-3 h-8 select-none pointer-events-none"
-              draggable="false"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <div
-      class="z-10 w-full h-max flex relative text-amber-300 flex-col md:flex-row justify-center items-center text-3xl sm:text-5xl md:text-6xl font-bold transform transition-all duration-300 ease-in-out bg-base-200"
-      id="contacts"
-    >
-      <div class="w-full md:w-5/12 hidden md:flex justify-center items-center">
-        <img
-          src="./img/contact.svg"
-          alt="contact"
-          class="w-11/12 select-none pointer-events-none"
-          draggable="false"
-        />
-      </div>
-      <div class="w-full md:w-6/12 flex flex-col justify-center items-center">
-        <p class="flex justify-center mt-20 md:mt-10 text-amber-200">CONTACT</p>
-        <div class="flex flex-row justify-center py-12 items-center">
-          <div
-            class="mx-2 sm:mx-4 rounded-full bg-fuchsia-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-fuchsia-300/30 group transition-all ease-in-out duration-500"
-            title="GitHub"
-          >
-            <a
-              href="https://github.com/AlzyWelzy"
-              target="_blank"
-              rel="noopener noreferrer"
-              class=""
-              ><svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 16 16"
-                class="w-8 h-8 sm:w-10 sm:h-10 text-fuchsia-900 group-hover:scale-75 transition-all ease-in-out duration-300"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                ></path></svg
-            ></a>
-          </div>
-          <div
-            class="mx-2 sm:mx-4 rounded-full bg-cyan-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-cyan-300/30 group transition-all ease-in-out duration-500"
-            title="Twitter"
-          >
-            <a
-              href="https://twitter.com/AlzyWelzy"
-              target="_blank"
-              rel="noopener noreferrer"
-              class=""
-              ><svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 16 16"
-                class="w-8 h-8 sm:w-10 sm:h-10 text-cyan-900 group-hover:scale-75 transition-all ease-in-out duration-500"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                ></path></svg
-            ></a>
-          </div>
-          <div
-            class="mx-2 sm:mx-4 rounded-full bg-blue-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-blue-300/30 group transition-all ease-in-out duration-500"
-            title="LinkedIn"
-          >
-            <a
-              href="https://linkedin.com/in/ManvendraRajpoot"
-              target="_blank"
-              rel="noopener noreferrer"
-              class=""
-              ><svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 16 16"
-                class="w-8 h-8 sm:w-10 sm:h-10 text-blue-900 group-hover:scale-75 transition-all ease-in-out duration-300"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                ></path></svg
-            ></a>
-          </div>
-          <div
-            class="mx-2 sm:mx-4 rounded-full bg-rose-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-rose-300/30 group transition-all ease-in-out duration-500"
-            title="Send Mail"
-          >
-            <a
-              href="mailto:welzyalzy@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class=""
-              ><svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 16 16"
-                class="w-8 h-8 sm:w-10 sm:h-10 text-rose-900 group-hover:scale-75 transition-all ease-in-out duration-300"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z"
-                ></path></svg
-            ></a>
-          </div>
-        </div>
-        <a href="/resume.pdf" download=""
-          ><div
-            class="mx-2 sm:mx-4 rounded-full bg-emerald-200 text-emerald-900 p-2.5 sm:py-4 px-8 ring-2 sm:ring-4 ring-emerald-300/30 group transition-all ease-in-out text-xl sm:text-2xl font-semibold flex justify-center items-center hover:bg-emerald-300"
-            title="Download CV"
-          >
-            Resume<svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 16 16"
-              class="w-8 h-8 sm:w-10 sm:h-10 text-emerald-900 ml-3"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
+          <div class="flex flex-row justify-center py-12 items-center">
+            <div
+              class="mx-2 sm:mx-4 rounded-full bg-fuchsia-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-fuchsia-300/30 group transition-all ease-in-out duration-500"
+              title="GitHub"
             >
-              <path
-                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
-              ></path>
-              <path
-                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
-              ></path>
-            </svg></div
-        ></a>
-      </div>
-    </div>
+              <a
+                href="https://github.com/AlzyWelzy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class=""
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-fuchsia-900 group-hover:scale-75 transition-all ease-in-out duration-300"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  ></path></svg
+              ></a>
+            </div>
+            <div
+              class="mx-2 sm:mx-4 rounded-full bg-cyan-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-cyan-300/30 group transition-all ease-in-out duration-500"
+              title="Twitter"
+            >
+              <a
+                href="https://twitter.com/AlzyWelzy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class=""
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-cyan-900 group-hover:scale-75 transition-all ease-in-out duration-500"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  ></path></svg
+              ></a>
+            </div>
+            <div
+              class="mx-2 sm:mx-4 rounded-full bg-blue-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-blue-300/30 group transition-all ease-in-out duration-500"
+              title="LinkedIn"
+            >
+              <a
+                href="https://linkedin.com/in/ManvendraRajpoot"
+                target="_blank"
+                rel="noopener noreferrer"
+                class=""
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-blue-900 group-hover:scale-75 transition-all ease-in-out duration-300"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  ></path></svg
+              ></a>
+            </div>
+            <div
+              class="mx-2 sm:mx-4 rounded-full bg-rose-200 p-2.5 sm:p-4 ring-2 sm:ring-4 ring-rose-300/30 group transition-all ease-in-out duration-500"
+              title="Send Mail"
+            >
+              <a
+                href="mailto:welzyalzy@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class=""
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-rose-900 group-hover:scale-75 transition-all ease-in-out duration-300"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+          <a href="/resume.pdf" download=""
+            ><div
+              class="mx-2 sm:mx-4 rounded-full bg-emerald-200 text-emerald-900 p-2.5 sm:py-4 px-8 ring-2 sm:ring-4 ring-emerald-300/30 group transition-all ease-in-out text-xl sm:text-2xl font-semibold flex justify-center items-center hover:bg-emerald-300"
+              title="Download CV"
+            >
+              Resume<svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="w-8 h-8 sm:w-10 sm:h-10 text-emerald-900 ml-3"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                ></path>
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                ></path>
+              </svg></div
+          ></a>
+        </div>
+      </section>
+    </main>
 
-    <footer
-      class="footer footer-center p-4 bg-base-300 text-base-content text-center"
-    >
-      <div>
-        <p>
-          Copyright ©
-          <span id="year">0000</span>
-          - All right reserved by Manvendra Rajpoot
-        </p>
-      </div>
+    <footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-900">
+      <hr
+        class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+      />
+      <span
+        class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+        >© <span id="year">0000</span>
+        <a href="https://AlzyWelzy.me/" class="hover:underline">AlzyWelzy™</a>.
+        All Rights Reserved.
+      </span>
     </footer>
+
+    <button
+      type="button"
+      data-mdb-ripple="true"
+      data-mdb-ripple-color="light"
+      class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5 fixed"
+      id="btn-back-to-top"
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        class="w-4 h-4"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="currentColor"
+          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+        ></path>
+      </svg>
+    </button>
   </body>
 </html>
