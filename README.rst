@@ -1,7 +1,12 @@
-My Portfolio Website
-====================
+# My Portfolio
 
-This is my portfolio website. It is build using HTML, Taildwind CSS and
-JavaScript. It is hosted on github pages. It is entirely in English and
-the code is open source. You can find view the website
-`here <https:/alzywelzy.github.io/>`__.
+Welcome to my portfolio website! I’m Manvendra Rajpoot, a Full Stack Developer.
+
+## Contact
+
+- **Email**: [manvendra@alzywelzy.com](mailto:manvendra@alzywelzy.com)
+- **Website**: [rajpoot.dev](https://rajpoot.dev)
+
+Feel free to reach out if you have any questions or opportunities for collaboration!
+
+Thank you for visiting!
